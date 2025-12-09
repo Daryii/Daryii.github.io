@@ -1,164 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio van Daryi – Software Developer. Projecten in HTML, CSS, JavaScript en Python. Beschikbaar voor stage."
+    />
+    <meta
+      name="keywords"
+      content="Daryi, Woldeghiorghis, portfolio, software developer, HTML, CSS, JavaScript, Python, stage"
+    />
+    <meta name="author" content="Daryi Woldeghiorghis" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
-    <title>Protfolio</title>
-    
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Daryi Woldeghiorghis | Portfolio" />
+    <meta
+      property="og:description"
+      content="Software Developer portfolio met projecten in JS en Python. Beschikbaar voor stage."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://daryii.github.io/" />
+    <meta
+      property="og:image"
+      content="https://daryii.github.io/images/gwn.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Daryi Woldeghiorghis | Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Software Developer portfolio met projecten in JS en Python."
+    />
+    <meta
+      name="twitter:image"
+      content="https://daryii.github.io/images/gwn.jpg"
+    />
+
+    <link rel="icon" href="images/logo.png" type="image/png" />
+
+    <title>Portfolio</title>
   </head>
-<body>
-  <div id="header">
-    <div class="container">
-      <nav>
-        <img src="images/logo.png" alt="logo">
-        <ul id="sidemenu">
-          <li> <a href="#header">Home</a></li>
-          <li> <a href="#about">About</a></li>
-          <li> <a href="#Mijnwerk">Protfolio</a></li>
-          <li> <a href="#contact">Contact</a></li>
-          <i class="fas fa-times" onclick="closemenu()"></i>
-        </ul>
-        <i class="fas fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="header-text">
-        <p>Software-Developer</p>
-        <h1>Hallo! Ik ben <span> Daryi </span><br>Woldeghiorghis</h1>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav aria-label="Hoofdnavigatie">
+          <a href="#header" class="logo-link" aria-label="Home">
+            <img src="images/logo.png" alt="Daryi Woldeghiorghis logo" />
+          </a>
+          <ul id="sidemenu" aria-hidden="true">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Mijnwerk">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <button
+                id="menu-toggle-close"
+                class="icon-button"
+                aria-label="Menu sluiten"
+              >
+                <i class="fas fa-times" aria-hidden="true"></i>
+              </button>
+            </li>
+          </ul>
+          <button
+            id="menu-toggle-open"
+            class="icon-button"
+            aria-label="Menu openen"
+            aria-controls="sidemenu"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </button>
+        </nav>
+        <div class="header-text">
+          <p>Software-Developer</p>
+          <h1>Hallo! Ik ben <span> Daryi </span><br />Woldeghiorghis</h1>
+        </div>
       </div>
     </div>
-  </div>
-<!-- ---------about----------- -->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="images/backgg.jpg">
-        </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About</h1>
-          <p>Ik ben Daryi en dit is mijn portfolio. Momenteel ben ik op zoek naar een stageplek in de software development-industrie. Mijn hobby's zijn ontspannen "chillen" en basketballen ik hou ervan om tijd buiten door te brengen en actief bezig te zijn. Ik heb gekozen voor software development omdat ik geïnteresseerd ben in technologie en hoe software onze wereld verder kan helpen.
+    <!-- ---------about----------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="images/mainp.png"
+              alt="Portret of banner van Daryi"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About</h1>
+            <p>
+              Ik ben een software developer met ervaring in het ontwikkelen van
+              webapplicaties en dashboards. Ik heb gewerkt aan systemen die
+              real-time informatie tonen, waarbij overzichtelijkheid en
+              gebruiksvriendelijkheid voorop staan. Ik werk met tools zoals
+              Python, Dash/Plotly en MySQL, en kan de frontend en backend
+              effectief op elkaar laten aansluiten. Daarnaast schrijf ik veilige
+              en onderhoudbare code door gebruik te maken van versiebeheer,
+              testen en een correcte implementatie van authenticatie.
             </p>
 
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('Vaardigheden')">Vaardigheden</p>
-            <p class="tab-links" onclick="opentab('Ervaring')">Ervaring</p>
-            <p class="tab-links" onclick="opentab('Opleiding')">Opleiding</p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('Vaardigheden')"
+              >
+                Vaardigheden
+              </p>
+              <p class="tab-links" onclick="opentab('Ervaring')">Ervaring</p>
+              <p class="tab-links" onclick="opentab('Opleiding')">Opleiding</p>
+            </div>
+            <div class="tab-contents active-tab" id="Vaardigheden">
+              <ul>
+                <li>
+                  <span>Technical</span><br />Python, Dash/Plotly, MySQL, HTML,
+                  CSS, JavaScript
+                </li>
+                <li>
+                  <span>Data & Visualisatie</span><br />SQL, data-analyses,
+                  interactieve dashboards in Dash/Plotly
+                </li>
+                <li>
+                  <span>Softwarekwaliteit</span><br />Versiebeheer (Git/GitHub),
+                  testen, documentatie, basis authenticatie/autoristatie
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Ervaring">
+              <ul>
+                <li>
+                  <span>Webapplicaties & Dashboards</span><br />Ontwikkelen van
+                  overzichtelijke, gebruiksvriendelijke interfaces met real-time
+                  informatie
+                </li>
+                <li>
+                  <span>Data & Back-end</span><br />Werken met MySQL en
+                  API-data, koppelen van front-end en back-end
+                </li>
+                <li>
+                  <span>Beheer & Kwaliteit</span><br />Git/GitHub workflow, pull
+                  requests, testen en debugging
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Opleiding">
+              <ul>
+                <li>
+                  <span>Mbo-Opleiding</span><br />Software-Developer Op Davinci
+                  College
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="tab-contents active-tab" id="Vaardigheden">
-            <ul>
-              <li><span>Vaardigheden-1</span><br>Stressbestendigheid</li>
-              <li><span>Vaardigheden-2</span><br>Communicatie</li>
-              <li><span>Vaardigheden-3</span><br>Samenwerken</li>
-
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="Ervaring">
-            <ul>
-              <li><span>Programmer-taal-1</span><br>Python</li>
-              <li><span>Programmer-taal-2</span><br>Java Script</li>
-              <li><span>Design-Programmer-talen</span><br>HTML en CSS</li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="Opleiding">
-            <ul>
-              <li><span>Mbo-Opleiding (22/23)</span><br>Software-Developer Op Davinci College</li>
-            </ul>
-          </div>
-
-          
-        </div> 
-          
-
-      </div>
-      
-    </div>
-  </div>
-<!-- --------Mijn werk---------- -->
-
-<div id="Mijnwerk">
-  <div class="container">
-    <h1 class="sub-title">Mijn Werk</h1>
-    <div class="work-list">
-      <div class="work">
-        <img src="images/gwn.jpg">
-        <div class="layer">
-          <h3>Horeca App</h3>
-          <p>JS applicatie waar je gemakkelijk bestellingen kunnen bijhouden en uiteraard ook de rekening kunnen opvragen</p>
-          <a href="https://github.com/Daryii/dynamische-uis/tree/main/Module%2001%20-%20JS/Horeca%20App" target="_blank"><i class="fas fa-external-link-alt"></i></a>
         </div>
-      </div>
-      <div class="work">
-        <img src="images/eten.jpg">
-        <div class="layer">
-          <h3>Recepten</h3>
-          <p>#3 Recepten op verschillende webpagina's</p>
-          <a href="https://github.com/Daryii/Statische-Front-end/tree/main/module-1/Recepten" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-
-      </div>
-      <div class="work">
-        <img src="images/rekenmachine.jpg">
-        <div class="layer">
-          <h3>Rekenmachine</h3>
-          <p>Een rekenmachine waarbij je meerdere berekeningen na elkaar kan uitvoeren ,zoals een echte calculator.</p>
-          <a href="https://github.com/Daryii/leren-programmeren/blob/main/Module_05/Deel_1/Berekeningen_uitvoeren.py" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-
       </div>
     </div>
-  </div>
+    <!-- --------Mijn werk---------- -->
 
-</div>
+    <div id="Mijnwerk">
+      <div class="container">
+        <h1 class="sub-title">Mijn Werk</h1>
+        <div class="work-list"></div>
+      </div>
+    </div>
 
-<!-- ---------contact------ -->
-<div id="contact">
-  <div class="container">
-    <div class="row">
-        <div class="contact-left">
-            <h1 class="sub-title">Contact</h1>        
-            <p><i class="fas fa-paper-plane"></i>d.kiflai10@gmail.com</p>
-            <p><i class="fas fa-phone-square-alt"></i>+31645511545</p>
+    <!-- ---------contact------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact</h1>
+            <p>
+              <i class="fas fa-paper-plane"></i
+              ><a href="mailto:d.kiflai10@gmail.com">d.kiflai10@gmail.com</a>
+            </p>
+
             <div class="social-icons">
-              <a href="https://github.com/Daryii" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/daryi-woldeghiorghis-139497241" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a
+                href="https://github.com/Daryii"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/daryi-woldeghiorghis-139497241"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-linkedin"></i
+              ></a>
             </div>
             <a href="images/Cv.pdf" download class="btn btn2">Download CV</a>
-          </div>  
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<script>
-  
-  var tablinks = document.getElementsByClassName("tab-links");
-  var tabcontents = document.getElementsByClassName("tab-contents");
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Daryi Woldeghiorghis. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-      for(tablink of tablinks){
-        tablink.classList.remove("active-link");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
       }
-      for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
+
+      var sidemenu = document.getElementById("sidemenu");
+      var menuOpenBtn = document.getElementById("menu-toggle-open");
+      var menuCloseBtn = document.getElementById("menu-toggle-close");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+        sidemenu.setAttribute("aria-hidden", "false");
+        menuOpenBtn && menuOpenBtn.setAttribute("aria-expanded", "true");
       }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab")
-    }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+        sidemenu.setAttribute("aria-hidden", "true");
+        menuOpenBtn && menuOpenBtn.setAttribute("aria-expanded", "false");
+      }
 
+      menuOpenBtn && menuOpenBtn.addEventListener("click", openmenu);
+      menuCloseBtn && menuCloseBtn.addEventListener("click", closemenu);
 
+      // Sluit menu met Escape-toets
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closemenu();
+        }
+      });
 
-  var sidemeu = document.getElementById("sidemenu");
+      // Dynamisch GitHub-projecten laden
+      (function () {
+        // Automatisch laden van projecten tijdelijk uitgeschakeld
+        return;
+        async function loadProjectsFromGitHub() {
+          const username = "Daryii";
+          const workList = document.querySelector("#Mijnwerk .work-list");
+          if (!workList) return;
 
-  function openmenu(){
-    sidemeu.style.right = "0";
-  }  
-  function closemenu(){
-    sidemeu.style.right = "-200px";
-  }
+          try {
+            const response = await fetch(
+              `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`,
+              { headers: { Accept: "application/vnd.github+json" } }
+            );
+            if (!response.ok) throw new Error("GitHub API error");
+            const repos = await response.json();
 
-</script>
-</body>
+            const keywords = [
+              "dash",
+              "plotly",
+              "mysql",
+              "dashboard",
+              "web",
+              "flask",
+              "fastapi",
+              "api",
+              "data",
+              "frontend",
+            ];
+
+            const matchesKeyword = (text) =>
+              keywords.some((k) => text.includes(k));
+
+            const scored = repos
+              .filter((r) => !r.fork)
+              .map((r) => {
+                const hay = `${(r.name || "").toLowerCase()} ${(
+                  r.description || ""
+                ).toLowerCase()}`;
+                const score = keywords.reduce(
+                  (acc, k) => acc + (hay.includes(k) ? 1 : 0),
+                  0
+                );
+                return { repo: r, score };
+              })
+              .filter((x) => x.score > 0)
+              .sort(
+                (a, b) =>
+                  b.score - a.score ||
+                  new Date(b.repo.pushed_at) - new Date(a.repo.pushed_at)
+              )
+              .slice(0, 6)
+              .map((x) => x.repo);
+
+            if (scored.length === 0) return; // laat statische items staan
+
+            const escapeHTML = (s) =>
+              String(s)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+
+            workList.innerHTML = "";
+            scored.forEach((r) => {
+              const card = document.createElement("div");
+              card.className = "work";
+              const imgSrc =
+                (r.owner && r.owner.avatar_url) || "images/logo.png";
+              const name = escapeHTML(r.name || "Project");
+              const desc = escapeHTML(
+                r.description || "Geen beschrijving beschikbaar."
+              );
+              const url = r.html_url;
+              card.innerHTML = `
+                <img src="${imgSrc}" alt="${name} repository" loading="lazy" />
+                <div class="layer">
+                  <h3>${name}</h3>
+                  <p>${desc}</p>
+                  <a href="${url}" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              `;
+              workList.appendChild(card);
+            });
+          } catch (e) {
+            // Bij fout: behoud de bestaande statische projecten
+          }
+        }
+
+        // Start laden zodra pagina klaar is
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", loadProjectsFromGitHub);
+        } else {
+          loadProjectsFromGitHub();
+        }
+      })();
+    </script>
+  </body>
 </html>
