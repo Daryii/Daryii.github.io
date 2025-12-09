@@ -34,6 +34,12 @@ nav {
   flex-wrap: wrap;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* Mobile menu buttons (hidden on desktop) */
 .icon-button {
   background: transparent;
