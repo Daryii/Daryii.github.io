@@ -33,10 +33,6 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://daryii.github.io/" />
-    <meta
-      property="og:image"
-      content="https://daryii.github.io/images/gwn.jpg"
-    />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Daryi Woldeghiorghis | Portfolio" />
     <meta
@@ -48,7 +44,7 @@
       content="https://daryii.github.io/images/gwn.jpg"
     />
 
-    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="icon" href="images/picon.png" type="image/png" />
 
     <title>Portfolio</title>
   </head>
@@ -60,9 +56,9 @@
             <img src="images/logo.png" alt="Daryi Woldeghiorghis logo" />
           </a>
           <ul id="sidemenu" aria-hidden="true">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#Mijnwerk">Portfolio</a></li>
+            <li><a href="#header">Startpagina</a></li>
+            <li><a href="#about">Over mij</a></li>
+            <li><a href="#Mijnwerk">Projecten</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>
               <button
@@ -96,13 +92,13 @@
         <div class="row">
           <div class="about-col-1">
             <img
-              src="images/mainp.png"
+              src="images/pfp.png"
               alt="Portret of banner van Daryi"
               loading="lazy"
             />
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About</h1>
+            <h1 class="sub-title">Over mij</h1>
             <p>
               Ik ben een software developer met ervaring in het ontwikkelen van
               webapplicaties en dashboards. Ik heb gewerkt aan systemen die
@@ -115,28 +111,28 @@
             </p>
 
             <div class="tab-titles">
+              
+              <p class="tab-links" onclick="opentab('Ervaring')">Ervaring</p>
+              <p class="tab-links" onclick="opentab('HardSkills')">
+                Hard Skills
+              </p>
               <p
                 class="tab-links active-link"
                 onclick="opentab('Vaardigheden')"
               >
                 Vaardigheden
               </p>
-              <p class="tab-links" onclick="opentab('Ervaring')">Ervaring</p>
               <p class="tab-links" onclick="opentab('Opleiding')">Opleiding</p>
             </div>
             <div class="tab-contents active-tab" id="Vaardigheden">
               <ul>
                 <li>
-                  <span>Technical</span><br />Python, Dash/Plotly, MySQL, HTML,
-                  CSS, JavaScript
+                  <span>Profiel</span><br />Ik heb meer dan 4 jaar logistieke ervaring naast mijn studie, dus hard werken is voor mij geen probleem.
                 </li>
+                
                 <li>
-                  <span>Data & Visualisatie</span><br />SQL, data-analyses,
-                  interactieve dashboards in Dash/Plotly
-                </li>
-                <li>
-                  <span>Softwarekwaliteit</span><br />Versiebeheer (Git/GitHub),
-                  testen, documentatie, basis authenticatie/autoristatie
+                  <span>Samenwerken</span><br />Kan goed samenwerken met
+                  allerlei soorten mensen
                 </li>
               </ul>
             </div>
@@ -159,6 +155,18 @@
               </ul>
             </div>
 
+            <div class="tab-contents" id="HardSkills">
+              <ul>
+                <li>
+                  <span>Frontend</span><br />HTML, CSS, JavaScript, Dash,
+                  Plotly, Bootstrap, Blade
+                </li>
+                <li><span>Backend</span><br />Python, Flask, PHP, Laravel</li>
+                <li><span>Database</span><br />MySQL Server</li>
+                <li><span>Security</span><br />Flask, JWT</li>
+              </ul>
+            </div>
+
             <div class="tab-contents" id="Opleiding">
               <ul>
                 <li>
@@ -175,8 +183,59 @@
 
     <div id="Mijnwerk">
       <div class="container">
-        <h1 class="sub-title">Mijn Werk</h1>
-        <div class="work-list"></div>
+        <h1 class="sub-title">Projecten</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="images/logo.png"
+              alt="WKO Dashboard project"
+              loading="lazy"
+            />
+            <div class="layer">
+              <h3>WKO Dashboard</h3>
+              <p>
+                Real-time Dash/Plotly dashboard voor Warmte/Koude opslag met
+                MySQL-logging en interactieve grafieken.
+              </p>
+              <a
+                href="https://github.com/Daryii/Proefopstelling-Warmte-Koude-Opslag"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/logo.png" alt="TodoApp project" loading="lazy" />
+            <div class="layer">
+              <h3>TodoApp</h3>
+              <p>TypeScript todo-app met gestructureerde takenlijst.</p>
+              <a
+                href="https://github.com/Daryii/TodoApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="images/logo.png"
+              alt="Lesvoorbereidingssysteem project"
+              loading="lazy"
+            />
+            <div class="layer">
+              <h3>Lesvoorbereidingssysteem</h3>
+              <p>Lesvoorbereidingstool voor plannen en materialen beheren.</p>
+              <a
+                href="https://github.com/Daryii/Lesvoorbereidingssysteem"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
