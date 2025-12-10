@@ -340,35 +340,33 @@ nav .fas {
 }
 @media only screen and (max-width: 900px) {
   nav {
-    justify-content: space-between;
-    gap: 12px;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
   }
   nav ul {
-    position: fixed;
-    top: 0;
-    right: -220px;
-    width: 220px;
-    height: 100vh;
-    padding-top: 60px;
-    background-color: #cb1f2a;
-    z-index: 2;
-    transition: right 0.4s ease;
+    position: static;
+    width: auto;
+    height: auto;
+    padding-top: 0;
+    background: transparent;
+    z-index: 1;
+    transition: none;
     margin: 0;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   nav ul li {
-    display: block;
-    margin: 20px;
+    display: inline-block;
+    margin: 8px;
   }
   .icon-button,
   #menu-toggle-open,
   #menu-toggle-close {
-    display: inline-flex;
-  }
-  /* Position close button inside the slide-out menu */
-  #menu-toggle-close {
-    position: absolute;
-    top: 12px;
-    left: 12px;
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -381,13 +379,15 @@ nav .fas {
   }
   nav ul {
     margin-left: 0;
+    justify-content: center;
+    gap: 10px;
   }
   .header-text {
-    margin-top: 32%;
+    margin-top: 18%;
     font-size: 18px;
   }
   .header-text h1 {
-    font-size: 34px;
+    font-size: 32px;
   }
   /* Projecten naar één kolom en compacter */
   .work-list {
@@ -428,42 +428,15 @@ nav .fas {
   }
   nav ul {
     margin-left: 0;
+    justify-content: center;
+    gap: 8px;
   }
   .header-text {
-    margin-top: 40%;
+    margin-top: 22%;
     font-size: 16px;
   }
   .header-text h1 {
     font-size: 28px;
-  }
-  /* show icon buttons on mobile */
-  .icon-button {
-    display: inline-flex;
-  }
-  #menu-toggle-open,
-  #menu-toggle-close {
-    display: inline-flex;
-  }
-  nav ul {
-    background-color: #cb1f2a;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 25px;
-  }
-  /* Position close button inside the slide-out menu */
-  #menu-toggle-close {
-    position: absolute;
-    top: 10px;
-    left: 10px;
   }
   .sub-title {
     font-size: 40px;
